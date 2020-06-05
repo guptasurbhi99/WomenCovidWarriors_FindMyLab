@@ -147,15 +147,30 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                   _handleSubmitted();
                 },
               ),
-              FlatButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/login');
-                },
-                child: const Text(
-                  'Login as user',
-                  style: TextStyle(fontSize: 16),
-                ),
-                textColor: Colors.amber[500],
+              Row(
+                children: <Widget>[
+                  FlatButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/register_lab');
+                    },
+                    child: const Text(
+                      'Register your lab',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    textColor: Colors.amber[500],
+                  ),
+                  sizedBoxSpace,
+                  FlatButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/login');
+                    },
+                    child: const Text(
+                      'Login as user',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    textColor: Colors.amber[500],
+                  ),
+                ],
               ),
               sizedBoxSpace,
             ],

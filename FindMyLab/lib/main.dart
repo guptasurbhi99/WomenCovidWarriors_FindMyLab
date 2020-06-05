@@ -12,15 +12,14 @@ import './screens/owner_dashboard.dart';
 import './screens/loading.dart';
 import './screens/book_appointment.dart';
 import './screens/owner_login.dart';
+import './screens/register_lab.dart';
 
-void main() => runApp(MaterialApp(
-    initialRoute: '/login',
-    routes: {
+void main() => runApp(MaterialApp(initialRoute: '/login', routes: {
       '/': (context) => Loading(),
       '/login': (context) => Login(),
+      '/register_lab': (context) => Register(),
       '/owner_login': (context) => OwnerLogin(),
       '/user_dashboard': (context) => UserDashboard(),
       '/owner_dashboard': (context) => OwnerDashboard(),
       '/book_appointment': (context) => BookAppointment()
-    }
-));
+    }));
