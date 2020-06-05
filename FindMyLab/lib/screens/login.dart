@@ -365,4 +365,11 @@ class _UsNumberTextInputFormatter extends TextInputFormatter {
     }
     return currentLocation;
   }
+
+  Future<double> _getDistanceBetweentwoLocations() async {
+    double distanceInMeters = await Geolocator().distanceBetween(
+        52.2165157, 6.9437819, 52.3546274, 4.8285838);
+    return distanceInMeters;
+  }
+
 //}
