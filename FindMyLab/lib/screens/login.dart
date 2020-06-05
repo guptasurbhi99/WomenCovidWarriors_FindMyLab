@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/gestures.dart' show DragStartBehavior;
+import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart';
 
 
@@ -181,7 +182,6 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 //}
 //class _GetLocationPageState extends State<GetLocationPage> {
 //
-  var location = new Location();
 //
 //  LocationData userLocation;
 //
@@ -220,7 +220,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 //          ),
 //        ));
 //  }
-
+  var location = new Location();
   Future<LocationData> _getLocation() async {
     LocationData currentLocation;
     try {
@@ -229,4 +229,10 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
       currentLocation = null;
     }
     return currentLocation;
+  }
+
+  Future<double> _getDistanceBetweentwoLocations() async {
+    double distanceInMeters = await Geolocator().distanceBetween(
+        52.2165157, 6.9437819, 52.3546274, 4.8285838);
+    return distanceInMeters;
   }
