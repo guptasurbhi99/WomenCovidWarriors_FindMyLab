@@ -67,9 +67,15 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
         'All required fields are not filled.',
       );
     } else {
-      form.save();
       showInSnackBar('${person.username} successfully logged in.');
-      Navigator.pushNamed(context, '/user_dashboard');
+      LocationData userLocation;
+      _getLocation().then((value) {
+        setState(() {
+          userLocation = value;
+          form.save();
+          Navigator.pushNamed(context, '/user_dashboard');
+        });
+      });
     }
   }
 
@@ -175,7 +181,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 //}
 //class _GetLocationPageState extends State<GetLocationPage> {
 //
-//  var location = new Location();
+  var location = new Location();
 //
 //  LocationData userLocation;
 //
@@ -215,12 +221,12 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 //        ));
 //  }
 
-//  Future<LocationData> _getLocation() async {
-//    LocationData currentLocation;
-//    try {
-//      currentLocation = await location.getLocation();
-//    } catch (e) {
-//      currentLocation = null;
-//    }
-//    return currentLocation;
-//  }
+  Future<LocationData> _getLocation() async {
+    LocationData currentLocation;
+    try {
+      currentLocation = await location.getLocation();
+    } catch (e) {
+      currentLocation = null;
+    }
+    return currentLocation;
+  }
