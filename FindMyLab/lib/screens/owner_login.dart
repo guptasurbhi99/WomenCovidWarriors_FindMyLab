@@ -148,6 +148,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                 },
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   FlatButton(
                     onPressed: () {
@@ -157,7 +158,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                       'Register your lab',
                       style: TextStyle(fontSize: 16),
                     ),
-                    textColor: Colors.amber[500],
+                    textColor: Colors.amber[700],
                   ),
                   sizedBoxSpace,
                   FlatButton(
@@ -168,7 +169,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                       'Login as user',
                       style: TextStyle(fontSize: 16),
                     ),
-                    textColor: Colors.amber[500],
+                    textColor: Colors.amber[700],
                   ),
                 ],
               ),

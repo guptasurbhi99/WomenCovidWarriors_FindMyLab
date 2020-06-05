@@ -12,9 +12,10 @@ class OwnerDashboard extends StatefulWidget {
 class _OwnerDashboardState extends State<OwnerDashboard> {
 
   List<Appointment> appointments = [
-    Appointment(patientName: 'Surbhi', patientSlot: '9 - 10'),
-    Appointment(patientName: 'Rashmi', patientSlot: '10 - 11'),
-    Appointment(patientName: 'Tanushree', patientSlot: '9 - 10')
+    Appointment(patientName: 'Surbhi Gupta', patientSlot: '9 - 10'),
+    Appointment(patientName: 'Rashmi Patil', patientSlot: '10 - 11'),
+    Appointment(patientName: 'Tanushree Bhattacharji', patientSlot: '9 - 10'),
+    Appointment(patientName: 'Rashmi Khandai', patientSlot: '12 - 1'),
   ];
 
   @override
@@ -26,6 +27,7 @@ class _OwnerDashboardState extends State<OwnerDashboard> {
         backgroundColor: Colors.blue[700],
       ),
       body: Container(
+        color: Colors.grey[300],
         child: Column(
           children: appointments.map((appointment) => AppointmentCard(appointment: appointment)).toList(),
         )
