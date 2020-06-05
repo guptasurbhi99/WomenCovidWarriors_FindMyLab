@@ -18,13 +18,26 @@ class _UserDashboardState extends State<UserDashboard> {
 
   @override
   Widget build(BuildContext context) {
+    Map userData = {};
+    userData = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
         appBar: AppBar(
           title: Text('User dashboard'),
         ),
         body: Container(
             child: Column(
-              children: hospitals.map((hospital) => HospitalCard(hospital: hospital)).toList(),
+              children: hospitals.map((hospital) => HospitalCard(
+                  hospital: hospital,
+                  bookAppointment: () {
+                    setState(() {
+                      Navigator.pushReplacementNamed(context, '/book_appointment', arguments: {
+                        'hospitalName': hospital.name,
+                        'personName': userData['personName']
+                      });
+                    });
+                  }
+              )).toList(),
             )
         )
     );

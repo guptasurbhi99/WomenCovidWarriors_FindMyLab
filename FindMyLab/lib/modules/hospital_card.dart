@@ -4,9 +4,11 @@ class HospitalCard extends StatelessWidget {
   const HospitalCard({
     Key key,
     @required this.hospital,
+    this.bookAppointment
   }) : super(key: key);
 
   final hospital;
+  final Function bookAppointment;
 
   @override
   Widget build(BuildContext context) {
@@ -50,9 +52,7 @@ class HospitalCard extends StatelessWidget {
                 SizedBox(height: 6.0),
                 Center(
                   child: FlatButton(
-                  onPressed: () {
-
-                  },
+                  onPressed: bookAppointment,
                   child: const Text(
                     'Book Slot',
                     style: TextStyle(fontSize: 16),

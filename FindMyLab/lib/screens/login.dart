@@ -74,7 +74,9 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
         setState(() {
           userLocation = value;
           form.save();
-          Navigator.pushNamed(context, '/user_dashboard');
+          Navigator.pushReplacementNamed(context, '/user_dashboard', arguments: {
+            'personName': 'Tanushree Bhattacharji',
+          });
         });
       });
     }
