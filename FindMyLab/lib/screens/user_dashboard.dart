@@ -11,14 +11,14 @@ class UserDashboard extends StatefulWidget {
 class _UserDashboardState extends State<UserDashboard> {
 
   List<Hospital> hospitals = [
-    Hospital(name: 'Tata Main Hospital', distance: '9', slots: ['9-10', '11-12'],contactNumber: '989123456'),
-    Hospital(name: 'Sakra Hospital', distance: '20', slots: ['8-9', '11-12'],contactNumber: '9878665533'),
-    Hospital(name: 'Bellandur Main Hospital', distance: '110', slots: ['10-11', '1-2'],contactNumber: '657743221'),
-    Hospital(name: 'Apollo Clinic', distance: '200', slots: ['11-12', '3-4'],contactNumber: '657743221'),
-    Hospital(name: 'Columbia Hospital', distance: '334', slots: ['No slots available','Check again Later'],contactNumber: '657743221'),
-    Hospital(name: 'Sarjapur main Hospital', distance: '434', slots: ['1-2','4-5'],contactNumber: '9577432332'),
-    Hospital(name: 'AIMS Hospital', distance: '446', slots: ['12-1','6-7'],contactNumber: '8577432338'),
-    Hospital(name: 'MAX Hospital', distance: '491', slots: ['2-3','4-5'],contactNumber: '9577432338'),
+    Hospital(name: 'Tata Main Hospital', distance: '9', slots: ['9-10', '11-12'],contactNumber: '989123456',address:'Indranagar,Bangalore'),
+    Hospital(name: 'Sakra Hospital', distance: '20', slots: ['8-9', '11-12'],contactNumber: '9878665533',address: 'Sarjapur Maid Road,Bangalore'),
+    Hospital(name: 'Bellandur Main Hospital', distance: '110', slots: ['10-11', '1-2'],contactNumber: '657743221',address:'Bellendur Main Road, Bangalore'),
+    Hospital(name: 'Apollo Clinic', distance: '200', slots: ['11-12', '3-4'],contactNumber: '657743221',address: 'Jayanagar,Bangalore'),
+    Hospital(name: 'Columbia Hospital', distance: '334', slots: ['Sorry!','Not available'],contactNumber: '657743221',address: 'Sarjapur Maid Road,Bangalore'),
+    Hospital(name: 'Sarjapur main Hospital', distance: '434', slots: ['1-2','4-5'],contactNumber: '9577432332',address:''),
+    Hospital(name: 'AIMS Hospital', distance: '446', slots: ['12-1','6-7'],contactNumber: '8577432338',address:'JP Nagar, Bangalore'),
+    Hospital(name: 'MAX Hospital', distance: '491', slots: ['2-3','4-5'],contactNumber: '9577432338',address:'Kormangala,Bangalore'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -33,8 +33,8 @@ class _UserDashboardState extends State<UserDashboard> {
           child: SingleChildScrollView(
             dragStartBehavior: DragStartBehavior.down,
             child: Container(
-
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: hospitals.map((hospital) => HospitalCard(
                   hospital: hospital,
                   bookAppointment: () {

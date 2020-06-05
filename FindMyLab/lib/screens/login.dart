@@ -127,6 +127,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                   decoration: InputDecoration(
                     filled: true,
                     icon: const Icon(Icons.person),
+                    labelText: 'Username',
                     hintText: 'Enter your username',
                   ),
                   onSaved: (value) {
@@ -142,6 +143,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                   decoration: InputDecoration(
                     filled: true,
                     icon: const Icon(Icons.lock),
+                    labelText: 'Password',
                     hintText: 'Enter your password',
                   ),
                   obscureText: true,
@@ -168,7 +170,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                     'Login as lab owner',
                     style: TextStyle(fontSize: 16),
                   ),
-                  textColor: Colors.amber[500],
+                  textColor: Colors.amber[700],
                 ),
               ],
             ),

@@ -259,14 +259,13 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                   },
                 ),
                 sizedBoxSpace,
-                Center(
-                  child: RaisedButton(
-                    color: Colors.blue,
-                    child: Text('Register'),
-                    onPressed: () {
-                      _handleSubmitted();
-                    },
-                  ),
+                RaisedButton(
+                  color: Colors.blue[500],
+                  textColor: Colors.white,
+                  child: Text('SIGN UP'),
+                  onPressed: () {
+                    _handleSubmitted();
+                  },
                 ),
                 sizedBoxSpace,
               ],

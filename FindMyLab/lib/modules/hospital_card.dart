@@ -22,11 +22,13 @@ class HospitalCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
+                SizedBox(height: 4.0),
                 Text(
                     hospital.name,
                     style: TextStyle(
                       fontSize: 18.0,
-                      color: Colors.grey[600],
+                      letterSpacing: 1.0,
+                      color: Colors.grey[900],
                     )
                 ),
                 SizedBox(height: 6.0),
@@ -46,27 +48,51 @@ class HospitalCard extends StatelessWidget {
                     )
                 ),
                 SizedBox(height: 6.0),
-
+                SizedBox(height: 2.0),
+                Text(
+                    hospital.address,
+                    style: TextStyle(
+                      fontSize: 14.0,
+                      color: Colors.grey[500],
+                    )
+                ),
+                SizedBox(height: 4.0),
                 Row(
                   children: <Widget>[
                     Text(
-                        hospital.slots[0],
+                        'Available slots:',
                         style: TextStyle(
                             fontSize: 14.0,
                             color: Colors.grey[800]
                         )
                     ),
                     SizedBox(width: 6.0),
-                    Text(
-                        hospital.slots[1],
-                        style: TextStyle(
-                            fontSize: 14.0,
-                            color: Colors.grey[800]
-                        )
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      color: Colors.blue[200],
+                      child: Text(
+                          hospital.slots[0],
+                          style: TextStyle(
+                              fontSize: 14.0,
+                              color: Colors.white
+                          )
+                      ),
+                    ),
+                    SizedBox(width: 6.0),
+                    Container(
+                      padding: const EdgeInsets.all(10.0),
+                      color: Colors.blue[200],
+                      child: Text(
+                          hospital.slots[1],
+                          style: TextStyle(
+                              fontSize: 14.0,
+                              color: Colors.white
+                          )
+                      ),
                     ),
                   ],
                 ),
-                SizedBox(height: 6.0),
+                SizedBox(height: 4.0),
                 Center(
                   child: FlatButton(
                   onPressed: bookAppointment,
@@ -74,7 +100,7 @@ class HospitalCard extends StatelessWidget {
                     'Book Slot',
                     style: TextStyle(fontSize: 16),
                     ),
-                      textColor: Colors.amber[500],
+                      textColor: Colors.blue[400],
                   ),
                 )
               ],
