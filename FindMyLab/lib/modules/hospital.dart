@@ -1,10 +1,12 @@
 class Hospital {
   String name;
-  int distance;
+  String distance;
+  String contactNumber;
   List<String> slots;
 
   Hospital({
     this.name,
     this.distance,
+    this.contactNumber,
     this.slots });
 }

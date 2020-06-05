@@ -98,7 +98,10 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 
     return Scaffold(
       key: _scaffoldKey,
-      body: Form(
+      body: Scrollbar(
+          child: SingleChildScrollView(
+          dragStartBehavior: DragStartBehavior.down,
+        child: Form(
         key: _formKey,
         autovalidate: _autoValidate,
         child: Container(
@@ -176,7 +179,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
             ],
           ),
         ),
-      ),
-    );
+     ) ),
+    ));
   }
 }

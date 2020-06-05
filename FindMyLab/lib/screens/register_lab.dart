@@ -130,7 +130,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
     } else {
       form.save();
       showInSnackBar(lab.name + lab.phoneNumber);
-      Navigator.pushNamed(context, '/user_dashboard');
+      Navigator.pushNamed(context, '/owner_dashboard');
     }
   }
 
@@ -145,7 +145,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
   }
 
   String _validatePhoneNumber(String value) {
-    final phoneExp = RegExp(r'^\(\d\d\d\) \d\d\d\-\d\d\d\d$');
+    final phoneExp = RegExp(r'^\d\d\d\d\d\d\d\d\d\d$');
     if (!phoneExp.hasMatch(value)) {
       return 'Enter valid Phone Number';
     }
@@ -188,7 +188,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                     filled: true,
                     icon: const Icon(Icons.person),
                     hintText: 'Enter the name of your lab',
-                    labelText: 'Name',
+                    labelText: 'Hospital Name',
                   ),
                   onSaved: (value) {
                     lab.name = value;
@@ -203,7 +203,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                     icon: const Icon(Icons.phone),
                     hintText: 'Enter a valid phone number',
                     labelText: 'Phone Number',
-                    prefixText: '+91 ',
+                    prefixText: '+91'
                   ),
                   keyboardType: TextInputType.phone,
                   onSaved: (value) {
@@ -218,6 +218,19 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
                     // Fit the validating format.
                     //_phoneNumberFormatter,
                   //],
+                ),
+                sizedBoxSpace,
+                TextFormField(
+                  cursorColor: cursorColor,
+                  decoration: InputDecoration(
+                    filled: true,
+                    hintText: 'Enter location',
+                    labelText: 'Location',
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                  onSaved: (value) {
+                    lab.userID = value;
+                  },
                 ),
                 sizedBoxSpace,
                 TextFormField(
