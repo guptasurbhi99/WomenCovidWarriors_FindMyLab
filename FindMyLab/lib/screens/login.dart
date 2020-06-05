@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/gestures.dart' show DragStartBehavior;
+import 'package:location/location.dart';
 
 
 class Login extends StatelessWidget {
@@ -304,3 +305,64 @@ class _UsNumberTextInputFormatter extends TextInputFormatter {
     );
   }
 }
+
+
+//Code to get current location of the user
+//TODO - intergrate with submit botton on login
+
+//class GetLocationPage extends StatefulWidget {
+//  @override
+//  _GetLocationPageState createState() => _GetLocationPageState();
+//}
+//class _GetLocationPageState extends State<GetLocationPage> {
+//
+  var location = new Location();
+//
+//  LocationData userLocation;
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return MaterialApp(
+//        home: Scaffold(
+//          appBar: AppBar(),
+//          body: Center(
+//            child: Column(
+//              mainAxisAlignment: MainAxisAlignment.center,
+//              children: <Widget>[
+//                userLocation == null
+//                    ? CircularProgressIndicator()
+//                    : Text("Location:" +
+//                    userLocation.latitude.toString() +
+//                    " " +
+//                    userLocation.longitude.toString()),
+//                Padding(
+//                  padding: const EdgeInsets.all(8.0),
+//                  child: RaisedButton(
+//                    onPressed: () {
+//                      _getLocation().then((value) {
+//                        setState(() {
+//                          userLocation = value;
+//                        });
+//                      });
+//                    },
+//                    color: Colors.blue,
+//                    child: Text(
+//                      "Get Location", style: TextStyle(color: Colors.white),),
+//                  ),
+//                ),
+//              ],
+//            ),
+//          ),
+//        ));
+//  }
+
+  Future<LocationData> _getLocation() async {
+    LocationData currentLocation;
+    try {
+      currentLocation = await location.getLocation();
+    } catch (e) {
+      currentLocation = null;
+    }
+    return currentLocation;
+  }
+//}
