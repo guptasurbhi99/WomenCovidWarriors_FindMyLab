@@ -31,6 +31,23 @@ class HospitalCard extends StatelessWidget {
                       color: Colors.grey[900],
                     )
                 ),
+                SizedBox(height: 6.0),
+                Text(
+                    hospital.distance,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey[600],
+                    )
+                ),
+                SizedBox(height: 6.0),
+                Text(
+                    hospital.contactNumber,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey[600],
+                    )
+                ),
+                SizedBox(height: 6.0),
                 SizedBox(height: 2.0),
                 Text(
                     hospital.address,

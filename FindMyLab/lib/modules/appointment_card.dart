@@ -30,13 +30,22 @@ class AppointmentCard extends StatelessWidget {
                 ),
                 SizedBox(height: 6.0),
                 Text(
+                    appointment.hospitalName,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      letterSpacing: 1.0,
+                      color: Colors.grey[900],
+                    )
+                ),
+                SizedBox(height: 6.0),
+                Text(
                     appointment.patientSlot,
                     style: TextStyle(
                         fontSize: 14.0,
-                        color: Colors.blue[500]
+                        color: Colors.grey[800]
                     )
                 ),
-              SizedBox(height: 6.0),
+                SizedBox(height: 6.0),
             ],
           ),
         ),
