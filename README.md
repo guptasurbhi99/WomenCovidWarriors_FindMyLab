@@ -109,12 +109,12 @@ generated](.//media/image2.png)
     file to install new features on device. For more details [click
     here](https://flutter.dev/docs/deployment/android).
 
-   **flutter build apk**
+         **flutter build apk**
 
 <a name="playstore"></a>
 ## **Publish to Google Playstore**
 
 FindMyLab app can be made avaliable through Google Play Store. For
 detailed instructions on publishing to the Google Play Store, see
-the [[Google Play
+the [Google Play
 launch](https://developer.android.com/distribute/googleplay/start) documentation
