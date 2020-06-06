@@ -42,8 +42,7 @@ for infection .
 <a name="demo"></a>
 ## **Demo video**
 
-![A screenshot of a computer screen Description automatically
-generated](.//media/image3.png)
+[![Watch the video](.//media/image3.png)](https://akamai.webex.com/webappng/sites/akamai/recording/play/d0ac9b3c2cf84d6a900875a1645543f9)
 
 <a name="arch"></a>
 ## **The Architecture**
