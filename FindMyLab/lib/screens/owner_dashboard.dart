@@ -12,20 +12,20 @@ class OwnerDashboard extends StatefulWidget {
 class _OwnerDashboardState extends State<OwnerDashboard> {
 
   List<Appointment> appointments = [
-    Appointment(patientName: 'Divya Sharma', patientSlot: '9 - 10',hospitalName: 'Tata Main Hospital',contactNumber: '9876543211'),
-    Appointment(patientName: 'Anshika Gupta', patientSlot: '10 - 11',hospitalName: 'Sakra Hospital',contactNumber:'0987654321'),
-    Appointment(patientName: 'Swati Agarwal', patientSlot: '1 - 2',hospitalName: 'Bellandur Main Hospital',contactNumber: '8765432109'),
-    Appointment(patientName: 'Tanisha Capriana', patientSlot: '12 - 1',hospitalName: 'Tata Main Hospital',contactNumber : '9876543212'),
-    Appointment(patientName: 'Tamanna Taneja', patientSlot: '4 - 5',hospitalName: 'Sakra Hospital', contactNumber: '7654321890'),
-    Appointment(patientName: 'Ishant Kapoor', patientSlot: '1 - 2',hospitalName: 'Apollo Clinic',contactNumber: '6543217891'),
-    Appointment(patientName: 'Manav Mehra', patientSlot: '6 - 7',hospitalName: 'Bellandur Main Hospital',contactNumber: '9876543211'),
+    Appointment(patientName: 'Divya Sharma', patientSlot: '9AM - 10AM',hospitalName: 'Tata Main Hospital',contactNumber: '9876543211'),
+    Appointment(patientName: 'Anshika Gupta', patientSlot: '10AM - 11AM',hospitalName: 'Sakra Hospital',contactNumber:'0987654321'),
+    Appointment(patientName: 'Swati Agarwal', patientSlot: '1PM - 2PM',hospitalName: 'Bellandur Main Hospital',contactNumber: '8765432109'),
+    Appointment(patientName: 'Tanisha Capriana', patientSlot: '12PM - 1PM',hospitalName: 'Tata Main Hospital',contactNumber : '9876543212'),
+    Appointment(patientName: 'Tamanna Taneja', patientSlot: '4PM - 5PM',hospitalName: 'Sakra Hospital', contactNumber: '7654321890'),
+    Appointment(patientName: 'Ishant Kapoor', patientSlot: '1PM - 2PM',hospitalName: 'Apollo Clinic',contactNumber: '6543217891'),
+    Appointment(patientName: 'Manav Mehra', patientSlot: '6PM - 7PM',hospitalName: 'Bellandur Main Hospital',contactNumber: '9876543211'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Owner dashboard'),
+        title: Text('Todays Appointments'),
         centerTitle: true,
         backgroundColor: Colors.blue[700],
       ),
@@ -33,6 +33,7 @@ class _OwnerDashboardState extends State<OwnerDashboard> {
         child:SingleChildScrollView(
     dragStartBehavior: DragStartBehavior.down,
     child: Container(
+        color: Colors.grey[300],
         child: Column(
           children: appointments.map((appointment) => AppointmentCard(appointment: appointment)).toList(),
         )

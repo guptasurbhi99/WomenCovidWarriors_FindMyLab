@@ -39,37 +39,38 @@ class _BookAppointmentState extends State<BookAppointment> {
                 children: <Widget>[
                   Text(hospitalData['hospitalName'],
                       style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.grey[800],
+                        fontSize: 30.0,
+                        color: Colors.grey[500],
+                        letterSpacing: 1.0
                       )),
                   SizedBox(height: 10.0),
                   Text('Purpose of visit:',
                       style:
-                      TextStyle(fontSize: 14.0, color: Colors.grey[600])),
-                  Text('Consultation',
+                      TextStyle(fontSize: 16.0, color: Colors.grey[600])),
+                  Text('COVID Testing',
                       style:
-                      TextStyle(fontSize: 16.0, color: Colors.grey[800])),
+                      TextStyle(fontSize: 18.0, color: Colors.grey[800])),
                   SizedBox(height: 10.0),
                   Text('This appointment is for:',
                       style:
-                          TextStyle(fontSize: 14.0, color: Colors.grey[600])),
-                  Text(hospitalData['personName'],
+                          TextStyle(fontSize: 16.0, color: Colors.grey[600])),
+                  Text('Tanushree Bhattacharji',
                       style:
-                          TextStyle(fontSize: 16.0, color: Colors.grey[800])),
+                          TextStyle(fontSize: 18.0, color: Colors.grey[800])),
                   SizedBox(height: 10.0),
                   Text('Consultation fees:',
                       style:
-                          TextStyle(fontSize: 14.0, color: Colors.grey[600])),
+                          TextStyle(fontSize: 16.0, color: Colors.grey[600])),
                   Text('INR 500',
                       style:
-                          TextStyle(fontSize: 16.0, color: Colors.grey[800])),
+                          TextStyle(fontSize: 18.0, color: Colors.grey[800])),
                   SizedBox(height: 10.0),
                   Text('Date and time:',
                       style:
-                          TextStyle(fontSize: 14.0, color: Colors.grey[600])),
-                  Text('Today, 7:30 PM',
+                          TextStyle(fontSize: 16.0, color: Colors.grey[600])),
+                  Text('Today, ${hospitalData['slotNumber']}',
                       style:
-                          TextStyle(fontSize: 16.0, color: Colors.grey[800])),
+                          TextStyle(fontSize: 18.0, color: Colors.grey[800])),
                   SizedBox(height: 10.0),
                   RaisedButton(
                     onPressed: () {
@@ -79,8 +80,8 @@ class _BookAppointmentState extends State<BookAppointment> {
                       });
                     },
                     child: const Text(
-                      'Book Slot',
-                      style: TextStyle(fontSize: 16),
+                      'Book Appointment',
+                      style: TextStyle(fontSize: 18),
                     ),
                     color: Colors.blue[500],
                     textColor: Colors.white,

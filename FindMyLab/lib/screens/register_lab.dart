@@ -130,7 +130,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
     } else {
       form.save();
       showInSnackBar(lab.name + lab.phoneNumber);
-      Navigator.pushNamed(context, '/owner_dashboard');
+      Navigator.pushNamed(context, '/owner_login');
     }
   }
 

@@ -10,7 +10,14 @@ class Login extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return TextFieldDemo();
+    return Scaffold(
+        appBar: AppBar(
+          automaticallyImplyLeading: false,
+          title: Text('User login'),
+          backgroundColor: Colors.blue[500],
+        ),
+        body: TextFieldDemo()
+    );
   }
 }
 
@@ -19,13 +26,8 @@ class TextFieldDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Text('User login'),
-        backgroundColor: Colors.blue[500],
-      ),
-      body: const TextFormFieldDemo(),
+    return Container(
+      child: const TextFormFieldDemo(),
     );
   }
 }
@@ -74,7 +76,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
         setState(() {
           userLocation = value;
           form.save();
-          Navigator.pushReplacementNamed(context, '/user_dashboard', arguments: {
+          Navigator.pushNamed(context, '/user_dashboard', arguments: {
             'personName': 'Tanushree Bhattacharji',
           });
         });
@@ -108,9 +110,7 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
 
     return Scaffold(
       key: _scaffoldKey,
-      body: Scrollbar(
-        child: SingleChildScrollView(
-      dragStartBehavior: DragStartBehavior.down,
+      body: Center(
       child: Form(
         key: _formKey,
         autovalidate: _autoValidate,
@@ -176,12 +176,12 @@ class TextFormFieldDemoState extends State<TextFormFieldDemo> {
             ),
         ),
       ),
-    )));
+    ));
   }
 }
 
 //Code to get current location of the user
-// TODO - intergrate with submit botton on login
+// TODO - integrate with submit bottom on login
 
 //class GetLocationPage extends StatefulWidget {
 //  @override

@@ -12,6 +12,7 @@ class HospitalCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    dynamic isSlotsAvailable = (hospital.slots.length == 2) ? true : false;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(
@@ -31,23 +32,6 @@ class HospitalCard extends StatelessWidget {
                       color: Colors.grey[900],
                     )
                 ),
-                SizedBox(height: 6.0),
-                Text(
-                    hospital.distance,
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.grey[600],
-                    )
-                ),
-                SizedBox(height: 6.0),
-                Text(
-                    hospital.contactNumber,
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.grey[600],
-                    )
-                ),
-                SizedBox(height: 6.0),
                 SizedBox(height: 2.0),
                 Text(
                     hospital.address,
@@ -56,9 +40,64 @@ class HospitalCard extends StatelessWidget {
                       color: Colors.grey[500],
                     )
                 ),
-                SizedBox(height: 4.0),
+                SizedBox(height: 6.0),
                 Row(
                   children: <Widget>[
+                    Icon(
+                      Icons.person_pin_circle,
+                      color: Colors.lightBlue,
+                    ),
+                    SizedBox(width: 6.0),
+                    Text(
+                        'Your distance from the hospital:',
+                        style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.grey[800],
+                        )
+                    ),
+                    SizedBox(width: 6.0),
+                    Text(
+                        hospital.distance,
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.grey[600],
+                        )
+                    ),
+                  ],
+                ),
+                SizedBox(height: 6.0),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.lightBlue,
+                    ),
+                    SizedBox(width: 6.0),
+                    Text(
+                        'Contact hospital:',
+                        style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.grey[800],
+                        )
+                    ),
+                    SizedBox(width: 6.0),
+                    Text(
+                        hospital.contactNumber,
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Colors.grey[600],
+                        )
+                    ),
+                  ],
+                ),
+                SizedBox(height: 6.0),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.access_time,
+                      color: Colors.lightBlue,
+                    ),
+                    SizedBox(width: 6.0),
                     Text(
                         'Available slots:',
                         style: TextStyle(
@@ -79,7 +118,7 @@ class HospitalCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(width: 6.0),
-                    Container(
+                    (isSlotsAvailable) ? Container(
                       padding: const EdgeInsets.all(10.0),
                       color: Colors.blue[200],
                       child: Text(
@@ -89,7 +128,7 @@ class HospitalCard extends StatelessWidget {
                               color: Colors.white
                           )
                       ),
-                    ),
+                    ) : Container(),
                   ],
                 ),
                 SizedBox(height: 4.0),
