@@ -86,6 +86,15 @@ generated](.//media/image1.png)
 ![A picture containing table Description automatically
 generated](.//media/image2.png)
 
+**Handshake with Plasma donors**
+
+Going forward we want to address this problem as well. A couple of simple steps and it can be acheived.
+When any user signs up we ask them if they are ready to donate plasma. We store this response alongwith the blood group of the user in our database.
+When a lab or hospital owner logs in, we can show him the list of users who are willing to donate plasma along with the contact details and blood group. This will aid the hospitals to reach out to individuals and immediately arrange plasma to save lives fast.
+
+**Payment Gateway**
+
+We can also integrate a payment gateway into our system to avoid any transaction through cash and preventing the spread.
 <a name="start"></a>
 ## **Getting started**
 
