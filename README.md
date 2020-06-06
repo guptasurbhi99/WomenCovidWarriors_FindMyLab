@@ -109,7 +109,7 @@ generated](.//media/image2.png)
     file to install new features on device. For more details [click
     here](https://flutter.dev/docs/deployment/android).
 
-         **flutter build apk**
+         flutter build apk
 
 <a name="playstore"></a>
 ## **Publish to Google Playstore**
