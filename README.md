@@ -42,6 +42,10 @@ for infection .
 <a name="demo"></a>
 ## **Demo video**
 
+![A screenshot of a computer screen Description automatically
+generated](.//media/image1.png){width="3.1744181977252843in"
+height="2.010229658792651in"}
+
 <a name="arch"></a>
 ## **The Architecture**
 
@@ -114,10 +118,12 @@ We can also integrate a payment gateway into our system to avoid any transaction
     [link](https://medium.com/@sethladd/installing-flutter-on-a-mac-13a26340f80a)
     for setting up flutter on your system.
 
--   After the feature development, run below command to create a APK
+-   After the feature development, run below commands to create a APK
     file to install new features on device. For more details [click
     here](https://flutter.dev/docs/deployment/android).
 
+         flutter pub get
+         flutter pub run flutter_launcher_icons:main
          flutter build apk
 
 <a name="playstore"></a>
