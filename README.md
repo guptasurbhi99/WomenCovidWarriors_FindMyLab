@@ -102,7 +102,7 @@ We can also integrate a payment gateway into our system to avoid any transaction
 
 **To Install FindMyLab:**
 
--   Download app-release.apk file from the Git repo in android device.
+-   Download [app-release.apk](https://github.com/guptasurbhi99/WomenCovidWarriors_FindMyLab/blob/master/app-release.apk) file from the Git repo in android device.
 
 -   Click on file to install the app.
 
