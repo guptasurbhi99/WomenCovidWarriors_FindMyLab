@@ -1,0 +1,41 @@
+{
+  "users":
+[
+  {
+    "name" : "Amrita Jha",
+    "userId": "jhaAmrita",
+    "password": "qwerty",
+    "contactNo" : 9891727238,
+    "location" : [22.2165157, 12.9437819],
+    "bookedSlots" : {
+      "labName" : "test",
+      "slotStartTime" : 9,
+      "slotDuration" : 1
+    }
+  },
+  {
+    "name" : "Anshika Gupta",
+    "userId": "gupta.anshika12",
+    "password": "qwerty",
+    "contactNo" : 9891727238,
+    "location" : [2.2165157, 12.9437819],
+    "bookedSlots" : {
+      "labName" : "test",
+      "slotStartTime" : 10,
+      "slotDuration" : 1
+    }
+  },
+  {
+    "name" : "Jhanvi Agarwal",
+    "userId": "agarwaljhanvi",
+    "password": "qwerty123",
+    "contactNo" : 9891727238,
+    "location" : [42.2165157, 52.9437819],
+    "bookedSlots" : {
+      "labName" : "test",
+      "slotStartTime" : 5,
+      "slotDuration" : 1
+    }
+  }
+]
+}

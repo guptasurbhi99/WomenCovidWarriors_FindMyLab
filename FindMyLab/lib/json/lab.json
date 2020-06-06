@@ -1,0 +1,29 @@
+{
+  "labs" :
+  [
+      {
+        "name" : "Shweta Jha",
+        "userId" : "shweta.jha1088",
+        "password" : "123455",
+        "location" : [52.2165157, 6.9437819],
+        "contactNo" : 9891517622,
+        "availableSlots" : [9,10,11,12,13,14,15]
+      },
+    {
+      "name" : "Sunil Sinha",
+      "userId" : "sunil.sinha1122",
+      "password" : "123455",
+      "location" : [44.2165157, 1.9437819],
+      "contactNo" : 9891517622,
+      "availableSlots" : [9,10,11,12,13,14,15]
+    },
+    {
+      "name" : "Divya Kumar",
+      "userId" : "divya.kumar98",
+      "password" : "123455",
+      "location" : [11.2165157, 0.9437819],
+      "contactNo" : 9891517622,
+      "availableSlots" : [9,10,11,12,13,14,15]
+    }
+  ]
+}
