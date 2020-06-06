@@ -43,8 +43,7 @@ for infection .
 ## **Demo video**
 
 ![A screenshot of a computer screen Description automatically
-generated](.//media/image1.png){width="3.1744181977252843in"
-height="2.010229658792651in"}
+generated](.//media/image3.png)
 
 <a name="arch"></a>
 ## **The Architecture**
