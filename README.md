@@ -1,6 +1,19 @@
 **Contents**
 
-**Short description**
+[1. Short Description. ](#desc)
+
+[2. Demo Video. ](#demo)
+
+[3. The Architecture. ](#arch)
+
+[4. Project RoadMap. ](#roadmap)
+
+[5. Getting Started. ](#start)
+
+[6. Publish To Google Play Store. ](#playstore)
+
+<a name="desc"></a>
+## **Short description**
 
 **What\'s the problem?**
 
@@ -26,13 +39,14 @@ It can be enhanced further to guide patients with next steps such as
 hospitalization, linking plasma donors in case they are found positive
 for infection .
 
-**Demo video**
+<a name="demo"></a>
+## **Demo video**
 
-**The architecture**
+<a name="arch"></a>
+## **The Architecture**
 
 ![A close up of a map Description automatically
-generated](.//media/image1.png){width="6.263888888888889in"
-height="2.39375in"}
+generated](.//media/image1.png)
 
 **Architecture Overview:**
 
@@ -66,13 +80,14 @@ height="2.39375in"}
 
 3.  Available slot for lab gets updated in Database as booked.
 
-**Project roadmap**
+<a name="roadmap"></a>
+## **Project Roadmap**
 
 ![A picture containing table Description automatically
-generated](.//media/image2.png){width="6.263888888888889in"
-height="3.410416666666667in"}
+generated](.//media/image2.png)
 
-**Getting started**
+<a name="start"></a>
+## **Getting started**
 
 **To Install FindMyLab:**
 
@@ -94,11 +109,12 @@ height="3.410416666666667in"}
     file to install new features on device. For more details [click
     here](https://flutter.dev/docs/deployment/android).
 
-**flutter build apk**
+         flutter build apk
 
-**Publish to Google Playstore**
+<a name="playstore"></a>
+## **Publish to Google Playstore**
 
 FindMyLab app can be made avaliable through Google Play Store. For
 detailed instructions on publishing to the Google Play Store, see
-the [[Google Play
-launch]{.underline}](https://developer.android.com/distribute/googleplay/start) documentation
+the [Google Play
+launch](https://developer.android.com/distribute/googleplay/start) documentation
