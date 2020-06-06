@@ -1,16 +1,16 @@
 **Contents**
 
-[ Short Description. ](#desc)
+[1. Short Description. ](#desc)
 
-[ Demo Video. ](#demo)
+[2. Demo Video. ](#demo)
 
-[ The Architecture. ](#arch)
+[3. The Architecture. ](#arch)
 
-[ Project RoadMap. ](#roadmap)
+[4. Project RoadMap. ](#roadmap)
 
-[ Getting Started. ](#start)
+[5. Getting Started. ](#start)
 
-[ Publish To Google Play Store. ](#playstore)
+[6. Publish To Google Play Store. ](#playstore)
 
 <a name="desc"></a>
 ## **Short description**
@@ -46,8 +46,7 @@ for infection .
 ## **The Architecture**
 
 ![A close up of a map Description automatically
-generated](.//media/image1.png){width="6.263888888888889in"
-height="2.39375in"}
+generated](.//media/image1.png)
 
 **Architecture Overview:**
 
@@ -85,8 +84,7 @@ height="2.39375in"}
 ## **Project Roadmap**
 
 ![A picture containing table Description automatically
-generated](.//media/image2.png){width="6.263888888888889in"
-height="3.410416666666667in"}
+generated](.//media/image2.png)
 
 <a name="start"></a>
 ## **Getting started**
@@ -119,4 +117,4 @@ height="3.410416666666667in"}
 FindMyLab app can be made avaliable through Google Play Store. For
 detailed instructions on publishing to the Google Play Store, see
 the [[Google Play
-launch]{.underline}](https://developer.android.com/distribute/googleplay/start) documentation
+launch](https://developer.android.com/distribute/googleplay/start) documentation
